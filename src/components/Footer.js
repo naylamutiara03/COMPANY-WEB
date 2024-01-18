@@ -24,7 +24,7 @@ function Footer() {
                   <img src={imgLoc} alt="" className="w-5 h-5 mr-2" />
                   <h4 className="font-semibold text-white">Alamat Kami</h4>
                 </div>
-                <a href="#" className="bg-transparent">Jl Sultan Iskandar Muda Kav.24 | Jakarta Selatang</a>
+                <a href="#" className="bg-transparent">Jl Sultan Iskandar Muda Kav.24 | Jakarta Selatan</a>
               </div>
               <div className="mb-5">
                 <div className="flex items-center">

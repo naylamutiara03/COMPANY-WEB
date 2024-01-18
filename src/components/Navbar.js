@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 
 function Navbar() {
   const [searchVisible, setSearchVisible] = useState(false);
@@ -19,36 +20,24 @@ function Navbar() {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
         <section className="container mx-auto flex items-center justify-between">
-          <a href="index.php" className="text-2xl font-bold text-white">
+          <Link to="/" className="text-2xl font-bold text-white">
             GRAHA ISMAYA
-          </a>
+          </Link>
           <div className="hidden md:flex md:items-center">
             <div id="userDropdown">
               <nav className="text-center md:text-left">
-                <a
-                  href="Home.js"
-                  className="text-white hover:underline p-2 text-sm md:text-base"
-                >
+                <Link to="/" className="text-white hover:underline p-2 text-sm md:text-base">
                   Home
-                </a>
-                <a
-                  href="Clients.js"
-                  className="text-white hover:underline p-2 text-sm md:text-base"
-                >
+                </Link>
+                <Link to="/clients" className="text-white hover:underline p-2 text-sm md:text-base">
                   Clients
-                </a>
-                <a
-                  href="About.js"
-                  className="text-white hover:underline p-2 text-sm md:text-base"
-                >
+                </Link>
+                <Link to="/about" className="text-white hover:underline p-2 text-sm md:text-base">
                   About
-                </a>
-                <a
-                  href="Contact.js"
-                  className="text-white hover:underline p-2 text-sm md:text-base"
-                >
+                </Link>
+                <Link to="/contact" className="text-white hover:underline p-2 text-sm md:text-base">
                   Contact
-                </a>
+                </Link>
               </nav>
             </div>
             <div
